@@ -1,0 +1,28 @@
+/*name:the discription of wind
+ *propose:learn c++
+ *auther:eden
+ */
+#include<stdio.h>
+
+int main(void)
+{
+	int W;
+	printf("please enter the speed of wind:");
+	scanf_s("%d", &W);
+
+	if (W <= 1)
+		printf("it is calm");
+	else if (W <= 3)
+		printf("it is light air");
+	else if (W <= 27)
+		printf("it is breeze");
+	else if (W <= 47)
+		printf("it is gale");
+	else if (W <= 63)
+		printf("it is storm");
+	else
+		printf("it is hurricane");
+
+
+	return 0;
+}
