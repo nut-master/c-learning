@@ -1,0 +1,21 @@
+*name:turn 24h into 12h
+ *propose:learn c++
+ *auther:eden
+ */
+#include<stdio.h>
+
+int main(void)
+{
+	int H, M;
+
+	printf("please enter a 24-hour time:");
+	scanf_s("%d:%d", &H, &M);
+
+	if (H >= 12) {
+		H -= 12;
+		printf("equivalent 12-hour time: %d:%d PM", H, M);
+	}
+	else
+		printf("equivalent 12-hour time: %d:%d AM", H, M);
+
+	return 0;
