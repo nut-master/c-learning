@@ -1,0 +1,28 @@
+/*name:judge the class of each grade
+ *propose:learn c++
+ *auther:eden
+ */
+#include<stdio.h>
+
+int main(void)
+{
+	int G, H;
+	printf("please enter numerical grade:");
+	scanf_s("%d", &G);
+	H = G / 10;
+	switch (H) {
+	case 9:  case 10:
+		printf("Letter grade:A");
+		break;
+	case 8: printf("Letter grade:B");
+		break;
+	case 7:printf("Letter grade:C");
+		break;
+	case 6:printf("Letter grade:D");
+		break;
+	case 5:  case 4:  case 3:  case 2:  case 1:  case 0:
+		printf("Letter grade:E");
+		break;
+	}
+	return 0;
+}
